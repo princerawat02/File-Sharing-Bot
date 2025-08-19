@@ -115,14 +115,6 @@ async def start_command(client: Client, message: Message):
 
         return
     else:
-        reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
-            ]
-        )
         if START_PIC:  # Check if START_PIC has a value
             await message.reply_photo(
                 photo=START_PIC,
@@ -133,7 +125,6 @@ async def start_command(client: Client, message: Message):
                     mention=message.from_user.mention,
                     id=message.from_user.id
                 ),
-                reply_markup=reply_markup,
                 quote=True
             )
         else:  # If START_PIC is empty, send only the text
@@ -145,7 +136,6 @@ async def start_command(client: Client, message: Message):
                     mention=message.from_user.mention,
                     id=message.from_user.id
                 ),
-                reply_markup=reply_markup,
                 disable_web_page_preview=True,
                 quote=True
             )
