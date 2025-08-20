@@ -20,13 +20,13 @@ API_HASH = os.environ.get("API_HASH", "c19d283502dd89bef3e9760b302260ee")
 CHANNEL_ID = os.environ.get("CHANNEL_ID", "dbchannel02")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "8179495500"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "8179495500"))https://docs.github.com/copilot/concepts/coding-agent/coding-agent
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://princerawat7700:zTyJIaxnIzIecfyv@cluster0.7feme14.mongodb.net/filesharexbot?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
