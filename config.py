@@ -20,7 +20,7 @@ API_HASH = os.environ.get("API_HASH", "c19d283502dd89bef3e9760b302260ee")
 CHANNEL_ID = os.environ.get("CHANNEL_ID", "dbchannel02")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "8179495500"))https://docs.github.com/copilot/concepts/coding-agent/coding-agent
+OWNER_ID = int(os.environ.get("OWNER_ID", "8179495500"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
